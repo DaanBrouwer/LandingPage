@@ -3,12 +3,13 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    text-align: center;
 }
 .container{
 
-    flex-grow: 1;
 }
 
+/* Navigation bar */
 .navbar{
     background-color: #1f2937;
     color: white;
@@ -30,35 +31,134 @@ body{
     display: flex;
     gap: 15px;
 
-    
 }
 ul{
     list-style: none;
 
 }
 
+/* Main header */
 .section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #1f2937;
-}
-.logo{
-    width: 200px;
-    height: 200px;
-}
-.section2{
-    background-color: white;
-    width: 100%;
-}
-.section3{
-    background-color: #E5E7EB;
-}
-.section4{
-    background-color: white;
-}
-button{
+    padding: 90px;
 
 }
-footer{
-    background-color: #1f2937;
-    text-align: center;
+
+.maintext{
+    flex-basis: 400px;
+    display: flex;
+    text-align: left;
+    color: #F9FAF8;
+    flex-direction: column;
+    margin-right: 50px;
+
+}
+h1{
+    font-size: 70px;
+    margin: 0;
+
+}
+.maintext button{
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    background: blue;
     color: white;
+    width: 150px;
+    height: 30px;
+    display: block;
+}
+.logo img{
+    display: flex;
+    width: 400px;
+    height: 200px;
+}
+
+/* Faciliteiten */
+
+.section2{
+    background-color: white;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.cards img{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.section3{
+    display: flex;
+    background-color: #E5E7EB;
+    height: 300px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 200px;
+}
+
+.section3 p{
+    font-style: italic;
+    font-size:20px;
+    text-align: center;
+}
+.section3 b{
+    text-align: right;
+    padding-left: 100px;
+}
+
+.section4{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blue-box{
+    display: flex;
+    font-size: 10px;
+    background-color: #3882F6;
+    height: 100px;
+    margin: 50px 50px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.textbox{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    font-size: large;
+    text-align: left;
+    padding: 20px 20px;
+
+}
+.textbox a{
+    font-size: small;
+}
+.blue-box button{
+    margin: 0 60px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: #3882F6;
+    color: white;
+    border-color: white;
+}
+footer{
+    display: flex;
+    background-color: #1f2937;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
 }
